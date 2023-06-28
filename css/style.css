@@ -7,7 +7,7 @@
   --sectoin-color: #ffffff;
   --secondary-cection-color: #2f303a;
 }
-  
+
 ul {
   list-style: none;
 }
@@ -21,6 +21,8 @@ p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* heder */
 .span-header {
@@ -35,6 +37,9 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: inline-block;
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
 
 .section .section-title {
@@ -43,10 +48,16 @@ p {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  
 }
 .contact .link {
   color: #2196f3;
 }
+.contact-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .contact-list .linc,
 .contact-list .tel {
   color: var(--primary-text-color);
@@ -58,13 +69,13 @@ p {
 }
 .site-nav .linc {
   color: #212121;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .site-nav .linc:hover,
 .site-nav .linc:focus,
 .contact-list .linc:hover,
@@ -75,6 +86,22 @@ p {
   color: var(--link-color);
   text-decoration: none;
 }
+.site-nav,
+.contact-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* оформление размеров шапки */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 3px solid gray;
+}
+
 /* герой */
 
 .section-title {
@@ -83,6 +110,10 @@ p {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+   padding-top: 94px;
+  margin: 0;
+  
+  
 }
 .accent {
   background-color: #2f303a;
@@ -91,6 +122,9 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  
+  
+
 }
 
 .section .accent {
@@ -100,6 +134,9 @@ p {
   letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
+ width: 696px;
+  margin: 0 auto; 
+  padding-top: 200px; 
 }
 
 .section .name-title {
@@ -109,6 +146,7 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  
 }
 
 .btn {
@@ -118,26 +156,61 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border: 0;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 200px;
 }
 
+/* 
 .btn:hover {
-  zoom: 110%;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} */
+
+
+
+.photo-works {
+  margin-bottom: 0;
+  padding-bottom: 94px;
 }
 
 /* преимущества */
 .advantages .advantages-title {
   color: #212121;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  padding-top:10px
+  
+}
+.advantages-title{
+  margin: 0;
+}
+.advantages-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom:94px;
+  padding-left: 0;
 }
 .section-team {
   background-color: #f5f4fa;
+  
 }
 .section-team .section-title {
   text-align: center;
+  margin-bottom: 50px;
+}
+.team-photo {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .name-text {
   color: var(--primary-text-color);
@@ -147,6 +220,7 @@ p {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 /* подвал */
 
 .footer {
@@ -164,10 +238,14 @@ p {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  display: inline-block;
+  padding-top: 60px;
 }
 
 .adress {
   font-style: normal;
+
+  padding-bottom: 60px;
 }
 
 .adress .adress-footer,
@@ -204,6 +282,13 @@ p {
   background-color: var(--button-background-color);
   color: var(--title-text-color);
   font-family: inherit;
+  min-width: 64px;
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0;
+  display: inline-block;
+  text-align: center;
 }
 
 .button:hover {
@@ -233,3 +318,4 @@ p {
 .linc {
   text-decoration: none;
 }
+
