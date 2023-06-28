@@ -211,6 +211,7 @@ p {
 .team-photo {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom:94px;
 }
 .name-text {
   color: var(--primary-text-color);
