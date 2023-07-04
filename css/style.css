@@ -125,12 +125,10 @@ p {
 
 /* оформление размеров шапки */
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 15px;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 3px solid gray;
+  /* outline: 3px solid gray; */
 }
 
 /* герой */
@@ -142,8 +140,10 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 94px;
-  margin: 0;
+  margin: 0 0 50px 0;
+
 }
+
 .accent {
   background-color: #2f303a;
   font-weight: 900;
@@ -172,6 +172,7 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin: 30px 0 0 0;
 }
 
 .btn {
@@ -192,8 +193,9 @@ p {
   margin-bottom: 200px;
 }
 
-/* 
-.btn:hover {
+
+/* .btn:hover {
+  zoom: 110%;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 } */
@@ -201,7 +203,14 @@ p {
 .photo-works {
   margin-bottom: 0;
   padding-bottom: 94px;
+  display: flex;
 }
+
+.photo-works > li {
+  margin-right:30px  
+}
+.photo-works > li:nth-child(3n){
+  margin-right:0;}
 
 /* преимущества */
 .advantages .advantages-title {
@@ -210,17 +219,28 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  padding-top: 10px;
+  padding-top: 0px;
+  margin-bottom:10px;
 }
-.advantages-title {
-  margin: 0;
-}
+
+
 .advantages-list {
-  margin-top: 0;
+  margin: 0 auto;
   margin-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
   padding-left: 0;
+
+  display: flex;
+  
+}
+.advantages-list > li{
+  max-width: 270px;
+  margin-right:30px; 
+  
+}
+.advantages-list >li:nth-last-child(4n+1){
+  margin-right: 0;
 }
 .section-team {
   background-color: #f5f4fa;
@@ -233,6 +253,15 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 94px;
+  display: flex;
+  /* background-color: #ffffff; */
+}
+.team-picture{
+  margin-right: 30px;
+  background-color: #ffffff;
+}
+.team-picture:nth-child(4n){
+  margin-right: 0;
 }
 .name-text {
   color: var(--primary-text-color);
@@ -241,6 +270,7 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+  margin:10px 0 30px 0;
 }
 
 /* подвал */
@@ -248,6 +278,7 @@ p {
 .footer {
   background-color: #2f303a;
   color: #ffffff;
+  padding-bottom:60px;
 }
 .footer-logo {
   color: var(--link-color);
@@ -261,15 +292,21 @@ p {
   letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
-  padding-top: 60px;
+  margin-top:60px;
+  margin-bottom:28px;
+  
 }
 
 .adress {
+
   font-style: normal;
+  
+  
 
-  padding-bottom: 60px;
 }
-
+.adress-footer{
+  display:block
+}
 .adress .adress-footer,
 .adress .tel-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -278,6 +315,8 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-bottom:12px;
+  margin-top: 12px;
 }
 .adress .adress-footer:hover,
 .adress .tel-footer:hover {
@@ -299,6 +338,10 @@ p {
   --linc-title-color: #212121;
   --linc-subtitle-color: #757575;
 }
+ul,li{
+  padding:0;
+  margin:0;
+}
 
 .button {
   background-color: var(--button-background-color);
@@ -312,7 +355,6 @@ p {
   display: inline-block;
   text-align: center;
 }
-
 .button:hover {
   background-color: var(--button-background-hover);
   color: #ffffff;
@@ -321,6 +363,49 @@ p {
   background-color: var(--button-background-hover);
 }
 
+
+
+
+/* геомтртя кнопок */
+.portfolio {
+  margin-top: 94px;
+  margin-bottom:94px
+ 
+}
+
+.list-button {
+  margin-top: 0;
+  margin-bottom:56px ;
+  display: flex;
+  justify-content: center;
+  
+ padding-left: 24px; 
+}
+.list-button li+ li { 
+  margin-left: 8px;
+}
+
+.photo-info{
+   
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.photo-list{
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px; 
+}
+.photo-list:nth-child(3n){
+  margin-right:0;
+}
+.photo-list:nth-last-child(-n +3){
+  margin-bottom:0;
+}
+
+
 .linc-title {
   color: var(--linc-title-color);
 
@@ -328,6 +413,10 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 24px;
+  
 }
 .linc-subtitle {
   font-style: normal;
@@ -336,7 +425,10 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--linc-subtitle-color);
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 .linc {
   text-decoration: none;
+  
 }
