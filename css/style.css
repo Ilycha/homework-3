@@ -30,6 +30,9 @@ img{
   max-width:100%;
 }
 /* heder */
+header{
+  border-bottom: 1px solid #EEE;
+}
 .section{
   padding-bottom: 94px;
 }
@@ -117,7 +120,6 @@ img{
 .mine-nav {
   align-items: center;
   display: flex;
-  border-bottom: 1px solid #EEE;
 }
 
 .contact-list .linc,
@@ -398,7 +400,7 @@ ul,li{
 /* геомтртя кнопок */
 .list-button {
   margin-top: 0;
-  margin-bottom:56px ;
+  margin-bottom:50px ;
   display: flex;
   justify-content: center;
   
@@ -430,6 +432,7 @@ ul,li{
 .filtr{
   padding:24px 20px;
   border: 1px solid #EEE;
+  border-top: 0;
 }
 .linc-title {
   color: var(--linc-title-color);
